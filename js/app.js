@@ -20,6 +20,7 @@
                 let foodArray = $scope.food.split(",").map(item => item.trim()).filter(item => item.length > 0);
                 if(!foodArray.length){
                     $scope.css = "red";
+                    $scope.message = "Please enter data first";
                 } else if(foodArray.length > 3){
                     $scope.message = "Too much!";
                 } else {
